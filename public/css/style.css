@@ -6,7 +6,6 @@ html{
 	outline: none;
 	-webkit-font-smoothing : antialiased;
 	-moz-osx-font-smoothing : grayscale;
-<<<<<<< HEAD
 }
 
 
@@ -14,7 +13,7 @@ html{
 	max-width: 0%;
 	max-height: 0%;
 	top: 0;
-	left: 0;	
+	left: 0;
 }
 
 .overlay-open{
@@ -84,8 +83,6 @@ html{
 @keyframes sendF {
 100% { opacity: 0; transform: scale(1); }
 0% { opacity: 1; transform: scale(1); }
-=======
->>>>>>> Added overlay effect for each post.
 }
 
 
@@ -93,7 +90,7 @@ html{
 	max-width: 0%;
 	max-height: 0%;
 	top: 0;
-	left: 0;	
+	left: 0;
 }
 
 .overlay-open{
