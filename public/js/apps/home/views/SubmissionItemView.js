@@ -3,7 +3,7 @@ define( function ( require ) {
 
 	var Backbone   = require( 'backbone' );
 	var Marionette = require( 'marionette' );
-	var confession = require( 'apps/home/models/ConfessionModel' );
+	var Confession = require( 'apps/home/models/ConfessionModel' );
 
 	var template = require( 'text!apps/home/templates/SubmissionTemplate.html' );
 

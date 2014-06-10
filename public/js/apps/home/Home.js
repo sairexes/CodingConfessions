@@ -16,7 +16,8 @@ define( function ( require ) {
 			Home.Router = Router.extend( {
 				'appRoutes' : {
 					''         : 'showHomePage',
-					'show/:id' : 'showConfessionPost'
+					'show/:id' : 'showConfessionPost',
+					'login'    : 'showLoginPage'
 				}
 			} );
 
@@ -27,6 +28,9 @@ define( function ( require ) {
 				},
 				'showConfessionPost' :  function ( id ) {
 					Home.Controller.Show.showConfession(id);
+				},
+				'showLoginPage'      : function () {
+					Home.Controller.Show.showLoginPage();
 				}
 
 			};

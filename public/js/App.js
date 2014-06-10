@@ -31,9 +31,12 @@ define( function ( require ) {
 
 	// start history after initialization.
 	App.on( 'initialize:after', function () {
-		Backbone.history.start();
-		Backbone.history.length=0;
 
+		if ( Backbone.history ) {
+
+			Backbone.history.start();
+			Backbone.history.length=0;
+		}
 		console.log( 'App has been initialized :)' );
 	} );
 

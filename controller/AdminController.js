@@ -38,14 +38,14 @@ Router
 			} );
 	} )
 	.post('/admin/login', function ( request, response ) {
-		Admin.findOne( { 'username' :  request.body.username }, function( error, user ) {
+		Admin.findOne( { 'username' :  request.body.username, 'password' : request.body.password }, function( error, user ) {
+
 			if( error ) {
 				return error;
 			}else if( !user ) {
-				response.redirect('/#login');
+				response.send( 500, user );
 			}else {
-				request.session.user_id = user._id;
-				response.redirect("/adminPage");
+				response.send ( 200, user );
 			}
 		} );
 	} );
